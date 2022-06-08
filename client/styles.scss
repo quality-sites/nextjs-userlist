@@ -1,0 +1,42 @@
+$color: #555;
+$main-background: #5B9EED;
+$white: #fff;
+$white-two: #aaa;
+body {
+  color: #555;
+  background-color: #5B9EED;
+  font-family: sans-serif;
+}
+
+.list {
+  background: $white;
+  border-radius: 2px;
+  list-style: none;
+  padding: 10px 20px;
+}
+
+.list-item {
+  &:last-child{
+    border-bottom: none;
+  }
+  &-content{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    h4, p{
+      flex: 1 1 160px;
+    }
+    h4{
+      margin-top: 10px;
+      font-size: 18px;
+    }
+    p{
+      margin-top: 5px;
+      color: $white-two;
+    }
+    .info {
+      width: 33.333%;
+    }
+  }
+}
